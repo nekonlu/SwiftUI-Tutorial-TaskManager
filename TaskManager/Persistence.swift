@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  TaskManager
 //
-//  Created by Ohara Yoji on 2022/06/13.
+//  Created by nekonlu on 2022/06/13.
 //
 
 import CoreData

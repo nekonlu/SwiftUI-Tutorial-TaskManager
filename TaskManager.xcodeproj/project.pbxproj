@@ -13,6 +13,7 @@
 		95D20AC7285784BA00F61E07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D20AC6285784BA00F61E07 /* Preview Assets.xcassets */; };
 		95D20AC9285784BA00F61E07 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D20AC8285784BA00F61E07 /* Persistence.swift */; };
 		95D20ACC285784BA00F61E07 /* TaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95D20ACA285784BA00F61E07 /* TaskManager.xcdatamodeld */; };
+		95FDB67B28578CFC002A489B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDB67A28578CFC002A489B /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		95D20AC6285784BA00F61E07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95D20AC8285784BA00F61E07 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		95D20ACB285784BA00F61E07 /* TaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManager.xcdatamodel; sourceTree = "<group>"; };
+		95FDB67A28578CFC002A489B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 		95D20ABE285784BA00F61E07 /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				95FDB67728578CAA002A489B /* ViewModel */,
+				95FDB67628578CA3002A489B /* View */,
 				95D20ABF285784BA00F61E07 /* TaskManagerApp.swift */,
 				95D20AC1285784BA00F61E07 /* ContentView.swift */,
 				95D20AC3285784BA00F61E07 /* Assets.xcassets */,
@@ -71,6 +75,21 @@
 				95D20AC6285784BA00F61E07 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95FDB67628578CA3002A489B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95FDB67A28578CFC002A489B /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95FDB67728578CAA002A489B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +164,7 @@
 			files = (
 				95D20AC9285784BA00F61E07 /* Persistence.swift in Sources */,
 				95D20AC2285784BA00F61E07 /* ContentView.swift in Sources */,
+				95FDB67B28578CFC002A489B /* Home.swift in Sources */,
 				95D20ACC285784BA00F61E07 /* TaskManager.xcdatamodeld in Sources */,
 				95D20AC0285784BA00F61E07 /* TaskManagerApp.swift in Sources */,
 			);
