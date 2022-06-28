@@ -18,7 +18,7 @@ struct Home: View {
                         .font(.title2.bold())
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                
+                .padding(.vertical)
             }
             .padding()
         }
