@@ -19,10 +19,29 @@ struct Home: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.vertical)
+                
+                CustomSegmentedBar()
             }
             .padding()
+            
+            
         }
     }
+    
+    // MARK: Custom Segmented Bar
+    @ViewBuilder
+    func CustomSegmentedBar() -> some View {
+        let tabs = ["Today", "Upcoming", "Task Done"]
+        HStack(spacing: 10) {
+            ForEach(tabs, id: \.self) { tab in
+                 Text(tab)
+                    .font(.callout)
+                    .fontWeight(.semibold)
+                    .foregroundColor(<#T##color: Color?##Color?#>)
+            }
+        }
+    }
+    
 }
 
 struct Home_Previews: PreviewProvider {
