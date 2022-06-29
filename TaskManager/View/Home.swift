@@ -50,6 +50,18 @@ struct Home: View {
                 .padding(.horizontal)
                 .background(.black, in: Capsule())
             }
+            // MARK: Linear Gradient BG
+            .padding(.top, 10)
+            .frame(maxWidth: .infinity)
+            .background{
+                LinearGradient(colors: [
+                    .white.opacity(0.05),
+                    .white.opacity(0.4),
+                    .white.opacity(0.7),
+                    .white
+                ], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            }
         }
     }
     
