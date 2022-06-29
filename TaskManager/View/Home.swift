@@ -24,10 +24,32 @@ struct Home: View {
                 .padding(.vertical)
                 
                 CustomSegmentedBar()
+                    .padding(.top, 5)
             }
             .padding()
             
+            // MARK: Task View
+            // Later Will Come
             
+        }
+        // overlay(): Viewを上に重ねる
+        .overlay(alignment: .bottom) {
+            // MARK: Add Button
+            Button {
+                
+            } label: {
+                Label {
+                    Text("Add Task")
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                } icon: {
+                    Image(systemName: "plus.app.fill")
+                }
+                .foregroundColor(.white)
+                .padding(.vertical, 12)
+                .padding(.horizontal)
+                .background(.black, in: Capsule())
+            }
         }
     }
     
