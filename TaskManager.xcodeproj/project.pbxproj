@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A033B3286C9437006AB703 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A033B2286C9437006AB703 /* TaskViewModel.swift */; };
 		95D20AC0285784BA00F61E07 /* TaskManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D20ABF285784BA00F61E07 /* TaskManagerApp.swift */; };
 		95D20AC2285784BA00F61E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D20AC1285784BA00F61E07 /* ContentView.swift */; };
 		95D20AC4285784BA00F61E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D20AC3285784BA00F61E07 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95A033B2286C9437006AB703 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		95D20ABC285784BA00F61E07 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D20ABF285784BA00F61E07 /* TaskManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerApp.swift; sourceTree = "<group>"; };
 		95D20AC1285784BA00F61E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		95FDB67728578CAA002A489B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				95A033B2286C9437006AB703 /* TaskViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D20AC9285784BA00F61E07 /* Persistence.swift in Sources */,
+				95A033B3286C9437006AB703 /* TaskViewModel.swift in Sources */,
 				95D20AC2285784BA00F61E07 /* ContentView.swift in Sources */,
 				95FDB67B28578CFC002A489B /* Home.swift in Sources */,
 				95D20ACC285784BA00F61E07 /* TaskManager.xcdatamodeld in Sources */,

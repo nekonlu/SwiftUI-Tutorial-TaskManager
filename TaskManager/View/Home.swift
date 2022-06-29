@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Home: View {
+    @StateObject var taskModel: TaskViewModel = .init()
+    //MARK: Matched Geometry Namespace
+    @Namespace var animation
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -37,7 +40,21 @@ struct Home: View {
                  Text(tab)
                     .font(.callout)
                     .fontWeight(.semibold)
-                    .foregroundColor(<#T##color: Color?##Color?#>)
+                    .scaleEffect(0.9)
+                    .foregroundColor(taskModel.currentTab == tab ? .white : .black)
+                    .padding(.vertical, 6)
+                    .frame(maxWidth: .infinity)
+                    .background {
+                        if taskModel.currentTab == tab {
+                            Capsule()
+                                .fill(.black)
+                                .matchedGeometryEffect(id: "TAB", in: animation)
+                        }
+                    }
+                    .contentShape(Capsule())
+                    .onTapGesture {
+                        withAnimation{taskModel.currentTab = tab}
+                    }
             }
         }
     }

@@ -7,15 +7,8 @@
 //
 
 import SwiftUI
+import CoreData
 
-struct TaskViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TaskViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        TaskViewModel()
-    }
+class TaskViewModel: ObservableObject {
+    @Published var currentTab: String = "Today"
 }
